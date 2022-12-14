@@ -13,7 +13,7 @@
 html, body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif
+  font-family: 'Inter', sans-serif;
 }
 
 .header {
@@ -47,34 +47,45 @@ background-color: var(--dark);
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
-  background-color: var(--lighter);
   height: 100vh;
   color: var(--white);
+  background: 
+  var(--lighter)
 }
 
 .main h1 {
   margin: 0;
   font-size: 2.5rem;
+  letter-spacing: -0.05em;
 }
 
-.main li, .header .logo-ct{
+ .header .logo-ct{
   font-size: 1.75rem;
 }
 
+.main li {
+  font-size: 1.25rem;
+}
+
 .main ul {
-  list-style: none;
+  max-width: 500px;
 }
 
 .main li {
   margin-top: 15px;
 }
 
-.main ul li::before {
+/* .main ul li::before {
   content: '\2022';
   color: var(--blue);
   font-weight: bold;
   display: inline-block;
   width: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   margin-right: 10px;
+} */
+
+.main ul li::marker {
+  color: var(--blue);
+  font-size: 1.75rem;
 }
